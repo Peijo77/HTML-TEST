@@ -1,0 +1,341 @@
+/*STYLING FÖR HELA WEBBSIDAN*/
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/*STYLING HEADER */
+header {
+    background-color: #fff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;  
+}
+
+/*STYLING LOGO*/
+.logo {
+    float: left;
+    padding: 20px;
+    margin-top: -15px;
+}
+
+.logo img {
+    height: 50px; /* Justera storleken efter behov */
+}
+
+/*STYLING NAVIGERINGSBAR*/
+nav {
+    float: right;
+    padding: 22px 0;
+   
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-flex;
+    padding-right: 30px;
+    
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: orange;
+    text-decoration: none;
+}
+
+
+/*Placering och styling av prickar under navbaren*/
+
+.navbar {
+    position: left; /* Sätt positionen så att vi kan positionera prickarna relativt till navbaren */
+  }
+  
+  .navbar::after {
+    content: ""; /* Lägg till innehåll för att skapa pseudo-elementet */
+    position: absolute; /* Sätt positionen till absolut för att placera det under navbaren */
+    bottom: -18px; /* Placera det några pixlar under navbaren */
+    left: 0; /* Placera det till vänster */
+    width: 100%; /* Bredden ska vara lika med navbarens bredd */
+    height: 20px; /* Höjden på prickarna */
+    background-image: radial-gradient(circle, white 25%, transparent 30%); /* Skapa en radiegradient med vita prickar. Det är här du ändrar storlek på prickarna. Exprimentera för att se resultat. */
+    background-size: 30px 20px; /* Storleken på prickarna */
+  }
+  
+
+
+
+/* STYLING PAGE 1 -----------------------------------*/
+
+/*Bakgrundsbild*/
+#Page1 {  
+    height: 100vh;
+    background-color: black; /*Om en browser inte läser in bilden kommer det visas en helt svart bakgrund så att den vita texten fortfarande syns*/
+    background-image: url("../Images/pic1.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+/*TEXT*/
+#Page1 section {
+    text-align:center;
+}
+
+/* stil för h1 */
+#Page1 h1 {
+    
+    color: white;
+    font-family:"la-parisienne-script-casual", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 8em;
+    margin-bottom: 30px; /* Margin-bottom för att minska avståndet mellan h1 och h2 */
+}
+
+/* stil för h2 */
+#Page1 h2 {
+
+    color: white;
+    font-family: "lato", sans-serif;
+    font-weight: 380;
+    font-style: italic;
+    font-size:24px;
+    margin-top: -30px; 
+    margin-inline-start: 0;
+    word-spacing:10px;
+}
+
+
+
+/* STYLING PAGE 2 -------------------------------------- */
+
+/*vit bakgrundsbild som täcker hela skärmen för denna sektionen*/
+#Page2 {
+    height: 100vh;
+    background-color: white;
+    display: stretch;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    align-items: stretch;
+   
+}
+
+.text-container {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    margin-left: -20px;
+
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+/* stil för h1 */
+#Page2 h1 {
+    font-family: "la-parisienne-script-casual", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-bottom: 30px; /* Margin-bottom för att minska avståndet mellan h1 och h2 */
+}
+
+/* stil för p */
+#Page2 p {
+    font-family: "lato", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 70px;
+}
+
+
+
+/* STYLING PAGE 3 -------------------------------------- */
+
+#Page3 {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+   }
+
+   /* stil för h1 */
+#Page3 h1 {
+    font-family: "la-parisienne-script-casual", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-bottom: 30px; /* Margin-bottom för att minska avståndet mellan h1 och h2 */
+}
+
+/* stil för p */
+#Page3 p {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 70px;
+}
+
+
+
+/* Styling för page4 -------------------------------------- */
+
+#Page4 {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+   }
+
+   /* stil för h1 */
+#Page4 h1 {
+    font-family: "la-parisienne-script-casual", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-bottom: 30px; /* Margin-bottom för att minska avståndet mellan h1 och h2 */
+}
+
+/* stil för p */
+#Page4 p {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 70px;
+}
+
+
+
+/* Styling för page5 ------------------------------------- */
+
+#Page5 {
+    height: 100vh;
+    background-color: white;
+    background-size: cover;
+}    
+
+
+ /* stil för h1 */
+ #Page5 h1,h2 {
+    font-family: "la-parisienne-script-casual", sans-serif;
+    font-weight: 550;
+    font-style: normal;
+    font-size: 30px;
+    margin-left: 70px;
+}  
+
+/* stil för p */
+#Page5 p,ul {
+    font-family: "lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: 20;
+    font-style: normal;
+    font-size: 1em;
+    margin-left: 70px;
+}
+
+.adress h1 {
+    margin-bottom: 0; /* Behåller eventuell övre marginal */
+    padding-bottom: 5px; /* Lägger till padding under h1 */
+}
+
+.adress p {
+    margin-top: 0; /* Behåller eventuell nedre marginal */
+    padding-top: 5px; /* Lägger till padding över p */
+}
+
+
+.open h2 {
+    margin-bottom: -1px; /* Justera avståndet mellan h2 och nästa element */
+}
+
+/* Styling för lista */
+.wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.two-column-list {
+    list-style: none;
+    padding: 0;
+}
+
+.two-column-list li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    margin-left: 3px;
+}
+
+.two-column-list li .right-aligned {
+    text-align: right;
+    width: 45%;
+    white-space: nowrap; /* Förhindra radbrytning */
+}
+
+.two-column-list li .left-aligned {
+    text-align: left;
+    width: 45%;
+    white-space: nowrap; /* Förhindra radbrytning */
+}
+
+
+
+
+
+
